@@ -1,0 +1,41 @@
+.float-left {
+    float: left;
+    width: 45%;
+}
+
+.float-right {
+    float: right;
+    width: 45%;
+}
+
+.bg-thistle {
+    background-color: thistle;
+}
+
+.bg-greenyellow {
+    background-color: greenyellow;
+}
+
+.border-purple {
+    border: 3px solid purple;
+}
+
+.border-green {
+    border: 3px solid green;
+}
+
+.text-rebeccapurple {
+    color: rebeccapurple;
+}
+
+.text-darkgreen {
+    color: darkgreen;
+}
+
+.text-purple {
+    color: purple;
+}
+
+.text-green {
+    color: green;
+}
