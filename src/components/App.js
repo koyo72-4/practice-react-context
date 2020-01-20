@@ -6,8 +6,8 @@ import ColorContext, { purpleContext } from '../context/ColorContext';
 import SportContext, { soccerContext } from '../context/SportContext';
 
 export const App = () => {
-	const [colorInfo, setColorInfo] = useState({ ...purpleContext });
-	const [sportInfo, setSportInfo] = useState({ ...soccerContext });
+	const [colorInfo, setColorInfo] = useState(purpleContext);
+	const [sportInfo, setSportInfo] = useState(soccerContext);
 
 	return (
 		<ColorContext.Provider value={{ ...colorInfo, setColorInfo }}>
