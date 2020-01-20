@@ -1,14 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import ColorContext from '../context/ColorContext';
 
 export const HighlightedText = ({ children }) => {
+    const { medium } = useContext(ColorContext);
     return (
-        <ColorContext.Consumer>
-            {({ medium }) => (
-                <em className={`text-${medium}`}>
-                    {children}
-                </em>
-            )}
-        </ColorContext.Consumer>
+        <em className={`text-${medium}`}>
+            {children}
+        </em>
     );
 };
