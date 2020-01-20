@@ -7,7 +7,7 @@ export const Image = () => {
             {({ name, image }) => (
                 <img
                     src={image}
-                    alt={`a ${name}${name === 'soccer' && ' ball'}`}
+                    alt={`a ${name}${name === 'soccer' ? ' ball' : ''}`}
                     style={{width: '60px', height: 'auto'}}
                 />
             )}
