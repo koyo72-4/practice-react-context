@@ -1,8 +1,17 @@
 import React, { useContext } from 'react';
-import SportContext from '../context/SportContext';
+import SportContext, { soccerContext, baseballContext } from '../context/SportContext';
 
 export const SportToggle = () => {
-    const { name, toggleSport } = useContext(SportContext);
+    const { name, setSportInfo } = useContext(SportContext);
+
+    const toggleSport = () => {
+        setSportInfo(
+            name === 'soccer'
+                ? { ...baseballContext, setSportInfo }
+                : { ...soccerContext, setSportInfo }
+        );
+    };
+
     return (
         <div style={{margin: '20px'}}>
             <label htmlFor="sport-select">What is your favorite sport? </label>
